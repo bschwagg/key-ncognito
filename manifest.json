@@ -20,10 +20,14 @@
     "http://*/*"
   ],
   "externally_connectable": {
+     "ids": [
+    "*"
+    ],
     "matches": [
-      "https://*/*",
-      "http://*/*"
-      ]
+      "*://*.google.com/*",
+      "http://localhost:5000/"
+    ],
+     "accepts_tls_channel_id": false
   },
   "options_page": "src/options/index.html",
   "content_scripts": [
