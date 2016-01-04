@@ -1,4 +1,4 @@
-chrome.extension.onMessage.addListener(
+chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         console.log("Attempting to open URL incognito: ", request.url);
         chrome.windows.getAll({}, function (wins) {
